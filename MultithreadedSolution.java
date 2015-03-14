@@ -28,7 +28,7 @@ public class MultithreadedSolution {
     }
 
     private class Solver implements Callable<Result> {
-        // todo add fields input for input parameters
+        // todo add fields for input parameters
 
         private void readData() throws IOException {
             // todo read input parameters
@@ -37,7 +37,7 @@ public class MultithreadedSolution {
         private Result solve(int testNum) throws IOException {
             Result result = new Result(testNum);
 
-            // todo fill result fields
+            // todo calculate and fill result fields. Only this method will run asynchronously.
 
             return result;
         }
